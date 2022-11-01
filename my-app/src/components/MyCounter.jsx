@@ -10,7 +10,7 @@ const MyCounter = (props) => {
     return (
         <>
             <div>{currentCount}</div>
-            <button onClick={handleClick}>+1</button>
+            <button onClick={handleClick}>+{props.incBy}</button>
         </>
 
     )

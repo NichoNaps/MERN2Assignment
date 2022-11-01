@@ -10,7 +10,7 @@ const Counter = (props) => {
     return (
         <>
             <p>
-               This is my <a href="https://github.com/NichoNaps/basicmern/tree/main/day4/my-app">Github Link</a>
+               This is my <a href="https://github.com/NichoNaps/MERN2Assignment">Github Link</a>
             </p>
         </>
 
