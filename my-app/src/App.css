@@ -1,3 +1,23 @@
 .App {
-    font-size: 14;
+     font-size: 60;
+}
+
+h1, h3 {
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+    margin: 0px;
+}
+
+button {
+    padding: 10px;
+    rotate: 0deg;
+    margin: 10px;
+}
+
+@keyframes example {
+  0% {rotate: 0deg;}
+  100% {rotate: 360deg;}
+}
+button:hover, h1:hover, h3:hover {
+    animation: example 1s linear infinite reverse;
 }

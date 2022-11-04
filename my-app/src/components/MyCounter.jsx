@@ -1,17 +1,18 @@
 import React, {useState} from "react"
 
 const MyCounter = (props) => {
-    const [currentCount, setCurrentCount] = useState(0) // assign start value and setter name
+    const [currentCount, setCurrentCount] = useState(props.startVal) // assign start value and setter name
 
     const handleClick = () => {
         setCurrentCount(currentCount + props.incBy)
     }
+//*style={{rotate: currentCount + "deg"}}*/
 
     return (
-        <>
+        <div >
             <div>{currentCount}</div>
-            <button onClick={handleClick}>+{props.incBy}</button>
-        </>
+            <button className="button" onClick={handleClick}>+{props.incBy}</button>
+        </div>
 
     )
 
